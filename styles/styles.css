@@ -15,6 +15,7 @@ nav a {
     color: white;
     padding: 1rem;
     text-decoration: none;
+    display: block;
 }
 
 /* Main content */
@@ -22,6 +23,11 @@ main {
     max-width: 840px;
     margin: 0 auto;
     padding: 1rem;
+}
+
+/* Main heading */
+h1 {
+    color: #333;
 }
 
 main img {
