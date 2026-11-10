@@ -1,21 +1,27 @@
+/* Universal Selector */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* General page styles */
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
 }
 
 /* Navigation */
 nav {
     background-color: #333;
     padding: 1rem;
+    text-align: center;
 }
 
 nav a {
     color: white;
     padding: 1rem;
     text-decoration: none;
-    display: block;
+    display: inline-block;
 }
 
 /* Main content */
@@ -36,22 +42,27 @@ main img {
     border: 1px solid #333;
     padding: 2px;
     box-shadow: 0 0 5px gray;
+    float: right;
 }
 
 /* Nigeria aside */
 aside {
     width: 20rem;
     margin: 1rem auto;
-    border: 1px solid rgb(0 0 0 / 20%);
-    padding: 1rem;
-    background-color: #eee;
-    color: #333;
     text-align: center;
+    position: relative;
 }
 
 aside img {
     width: 200px;
     height: auto;
+}
+
+/* Nigeria heading overlay */
+aside h2 {
+    position: absolute;
+    top: 47px;
+    left: 150px;
 }
 
 /* Paragraphs */
@@ -65,4 +76,13 @@ footer {
     border-top: 1px solid #000;
     text-align: center;
     padding: 1rem;
+}
+
+/* Class Selectors */
+.box {
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 10%);
+    padding: 1rem;
+    background-color: #eee;
+    color: #333;
 }
