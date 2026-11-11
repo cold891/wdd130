@@ -1,0 +1,174 @@
+:root {
+    --primary-color: #164B60;
+    --secondary-color: #F5E6CC;
+    --accent1-color: #1B6B6F;
+    --accent2-color: #D99B45;
+
+    --heading-font: Georgia, "Times New Roman", serif;
+    --body-font: Arial, Helvetica, sans-serif;
+}
+
+/* CSS Box Model Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Page Styles */
+body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+}
+
+/* Page Layout */
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+/* Heading Styles */
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+/* Spacing Styles */
+nav,
+p,
+section,
+article {
+    margin: 16px;
+    padding: 8px;
+}
+
+/* Social Media Links */
+.socialmedia a {
+    text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+}
+
+/* Hero Image */
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Hero Heading */
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.85;
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+/* Hero Article */
+.hero article {
+    position: absolute;
+    top: 220px;
+    left: 20px;
+    right: 20px;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    opacity: 0.9;
+    padding: 16px;
+}
+
+/* Hero Article Image */
+.hero article img {
+    float: right;
+    width: 125px;
+    height: auto;
+    margin: 0 0 12px 16px;
+}
+
+/* History and Adventure Sections */
+section {
+    margin: 24px 0;
+    padding: 16px;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+/* Footer Styling */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    border-top: 1px solid var(--primary-color);
+}
+
+footer p {
+    margin: 0;
+}
+
+.socialmedia img {
+    width: 32px;
+    height: 32px;
+}
+
+/* Adventure Images */
+section img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    margin: 8px;
+}
+
+/* Adventure Image Layout */
+section:has(img) {
+    text-align: center;
+}
+
+/* Header Styling */
+header {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    align-items: center;
+    padding: 16px;
+    background-color: var(--secondary-color);
+}
+
+header img {
+    width: 100px;
+    height: auto;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header nav a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Navigation Hover Effect */
+header nav a:hover {
+    color: var(--accent2-color);
+    text-decoration: underline;
+}
+
+/* Page Background */
+body {
+    background-color: #F8F8F8;
+}
